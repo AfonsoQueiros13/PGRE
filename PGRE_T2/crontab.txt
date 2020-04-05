@@ -1,0 +1,1 @@
+*/5 * * * * awstats -config=/etc/awstats/awstats.site1.conf -update > /dev/null*/5 * * * * awstats -config=/etc/awstats/awstats.site2.conf -update > /dev/null*/5 * * * * webalizer -c /etc/webalizer/webalizer85.conf*/5 * * * * webalizer -c /etc/webalizer/webalizer90.conf*/5 * * * * /etc/apache2/posts.sh

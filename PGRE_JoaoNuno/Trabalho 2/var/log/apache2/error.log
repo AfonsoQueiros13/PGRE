@@ -1,0 +1,17 @@
+[Thu Mar 14 00:08:00.829207 2019] [mpm_prefork:notice] [pid 12363] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Thu Mar 14 00:08:00.829268 2019] [core:notice] [pid 12363] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Mar 14 15:54:41.971387 2019] [mpm_prefork:notice] [pid 12363] AH00169: caught SIGTERM, shutting down
+[Thu Mar 14 15:54:42.101323 2019] [mpm_prefork:notice] [pid 17284] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Thu Mar 14 15:54:42.101432 2019] [core:notice] [pid 17284] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Mar 14 16:01:36.175352 2019] [mpm_prefork:notice] [pid 17284] AH00169: caught SIGTERM, shutting down
+[Thu Mar 14 16:01:36.323446 2019] [mpm_prefork:notice] [pid 17665] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Thu Mar 14 16:01:36.323564 2019] [core:notice] [pid 17665] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Mar 14 16:58:20.687638 2019] [mpm_prefork:notice] [pid 17665] AH00169: caught SIGTERM, shutting down
+[Thu Mar 14 16:58:20.942686 2019] [mpm_prefork:notice] [pid 21096] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Thu Mar 14 16:58:20.942813 2019] [core:notice] [pid 21096] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Mar 14 17:55:12.732531 2019] [mpm_prefork:notice] [pid 21096] AH00169: caught SIGTERM, shutting down
+[Thu Mar 14 17:55:12.859656 2019] [mpm_prefork:notice] [pid 25362] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Thu Mar 14 17:55:12.859762 2019] [core:notice] [pid 25362] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Mar 14 18:03:19.245403 2019] [mpm_prefork:notice] [pid 25362] AH00169: caught SIGTERM, shutting down
+[Thu Mar 14 18:03:19.360587 2019] [mpm_prefork:notice] [pid 26046] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Thu Mar 14 18:03:19.360685 2019] [core:notice] [pid 26046] AH00094: Command line: '/usr/sbin/apache2'

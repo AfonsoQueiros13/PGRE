@@ -1,0 +1,76 @@
+apt install bind9 bind9utils
+
+nano /etc/bind/named.conf.options
+
+	acl "trusted" {
+   	     172.16.1.12;
+  	      172.16.1.11;
+  	      172.16.1.13;
+  	      172.16.1.14;
+	};
+
+	recursion yes;
+        allow-recursion { trusted; };
+        listen-on { 172.16.1.12; };
+        allow-transfer { none; };
+
+        forwarders {
+                172.16.1.1;
+         };
+
+
+nano /etc/bind/named.conf.local
+
+	zone "netlab.fe.up.pt" {
+        	type master;
+        	file "/etc/bind/zones/db.netlab.fe.up.pt";
+	};
+
+	zone "1.16.172.in-addr.arpa" {
+       		type master;
+       		file "/etc/bind/zones/db.1.16.172";
+	};
+
+mkdir /etc/bind/zones
+cp ../db.local ./db.netlab.fe.up.pt
+nano db.netlab.fe.up.pt
+
+$TTL    604800
+@       IN      SOA     tux12.netlab.fe.up.pt. admin.netlab.fe.up.pt. (
+                              3         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+; name servers - NS records
+        IN      NS      tux12.netlab.fe.up.pt.
+
+; name servers - A records
+tux12.netlab.fe.up.pt.          IN      A       172.16.1.12
+
+; 172.16.1.0/24 - A records
+tux11.netlab.fe.up.pt.          IN      A       172.16.1.11
+tux13.netlab.fe.up.pt.          IN      A       172.16.1.13
+tux14.netlab.fe.up.pt.          IN      A       172.16.1.14
+
+
+cp ../db.127 ./db.1.16.172
+nano db.1.16.172
+$TTL    604800
+@       IN      SOA     tux12.netlab.fe.up.pt. admin.netlab.fe.up.pt. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+; name servers - NS records
+        IN      NS      tux12.netlab.fe.up.pt.
+
+; PTR Records
+12      IN      PTR     tux12.netlab.fe.up.pt.  ; 172.16.1.12
+11      IN      PTR     tux11.netlab.fe.up.pt.  ; 172.16.1.11
+13      IN      PTR     tux13.netlab.fe.up.pt.  ; 172.16.1.13
+14      IN      PTR     tux14.netlab.fe.up.pt.  ; 172.16.1.14
+
+
+service bind9 restart

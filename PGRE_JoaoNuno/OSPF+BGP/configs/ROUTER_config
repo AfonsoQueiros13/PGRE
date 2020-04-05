@@ -1,0 +1,35 @@
+configure terminal
+interface fastEthernet 0/0.1
+encapsulation dot1Q 11
+ip address 172.16.11.4 255.255.255.0
+exit
+
+interface fastEthernet 0/0.2
+encapsulation dot1Q 12
+ip address 172.16.12.4 255.255.255.0
+exit
+
+interface Serial0/0/0:0
+ip address 192.168.1.49 255.255.255.252
+exit
+
+interface Serial0/0/0:0
+ip address 192.168.1.49 255.255.255.252
+exit
+
+router ospf 1
+ospf router-id 172.16.2.19
+log-adjacency-changes !!!
+auto-cost reference-bandwidth 1000 !!!
+network 172.16.11.0 0.0.0.255 area 0
+network 172.16.12.0 0.0.0.255 area 0
+exit
+
+router bgp 65001
+no synchronization
+bgp log-neighbor-changes
+netowork 172.16.11.0 mask 255.255.255.0
+netowork 172.16.12.0 mask 255.255.255.0
+neighbor 192.168.1.50 remote-as 65002
+neighbor 192.168.1.58 remote-as 65004
+end

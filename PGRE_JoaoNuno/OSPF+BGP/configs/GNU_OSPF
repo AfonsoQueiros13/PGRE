@@ -1,0 +1,18 @@
+GNU11:	
+	router ospf
+	ospf router-id 172.16.11.1
+	network 172.16.11.0/24 area 0.0.0.0
+
+GNU12:	
+	router ospf
+	ospf router-id 172.16.11.2
+	network 172.16.11.0/24 area 0.0.0.0
+	network 172.16.12.0/24 area 0.0.0.0
+
+GNU13:	
+	router ospf
+	ospf router-id 172.16.12.3
+	network 172.16.12.0/24 area 0.0.0.0
+
+Anuncio das rotas:
+	default-information originate

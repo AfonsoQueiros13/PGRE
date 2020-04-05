@@ -1,0 +1,183 @@
+  
+  518  apt-get install snmpd
+  519  cp /etc/snmp/snmpd.conf  /etc/snmp/snmpd.conf.default
+  520  pluma /etc/snmp/snmpd.conf
+  521  apt-get install ntp update
+  522  apt-get install ntpdate
+  523  apt-get install bind9 dnsutils
+  524  apt-get install ntop
+  525  apt-get update -y
+  526  apt-get install ntop
+  527* 
+  528* 
+  529  apt-get install ntopng
+  530  apt-get install vsftpd
+  531  nano /etc/vsftpd.conf 
+  532  systemctl restart vsftpd
+  533  systemctl enable vsftpd
+  534  systectl restart ntpng
+  535  systemctl restart ntpng
+  536  systemctl restart ntopng
+  537  systemctl enable ntopng
+  538  ntpdate -q 172.161.1.24
+  539  ntopng date -q 172.161.1.24
+  540  ntopng -q 172.161.1.24
+  541  ntpdate
+  542  ntpdate --help
+  543  ntpdate 
+  544* ntpdate 
+  545  ntpdate -q 172.161.1.24
+  546  ntpdate -h
+  547  ntpngdate -h
+  548  ntopngdate -h
+  549  ntpdate -q localhost
+  550  ntpq -pn
+  551  ntopng -pn
+  552  apt-get install postfix
+  553  apt-get install mailutils
+  554  cp /etc/postfix/main.cf /etc/postfix/main.cf.backup
+  555  pluma /etc/postfix/main.cf 
+  556  systemctl restart postfix
+  557  systemctl enable postfix
+  558  echo 'init' | mail -s 'init' root
+  559  cd /Maildir
+  560  cd Maildir/
+  561  cd/var/mail
+  562  cd /var/mail
+  563  ls
+  564  ls
+  565  cd root 
+  566  pluma root
+  567  ls
+  568  echo 'init' | mail -s 'init' root
+  569  pluma root
+  570  cd /etc/aliases
+  571  cd /etc/aliases
+  572  ls
+  573  pluma root
+  574  ostconf -n
+  575  postconf -n
+  576  systemctl status postfix
+  577  mailq
+  578  mail
+  579  ls Maildir/
+  580  netstat -tlpn
+  581  tailf /var/log/mail.log
+  582  apt install tailf
+  583  tail -f /var/log/mail.log
+  584  cd /Maildir
+  585  cd 
+  586  ls
+  587  cd /
+  588  ls
+  589  cd /home
+  590  ls
+  591  ls
+  592  cd ~
+  593  ls
+  594  ls /Maildir
+  595  ls Maildir
+  596  pluma /etc/postfix/main.cf 
+  597  echo 'init' | mail -s 'init' root
+  598  cd ~
+  599  cd Maildir/
+  600  çs
+  601  ls
+  602  cd
+  603  cd /var/mail
+  604  ls
+  605  cd root 
+  606  pluma root 
+  607  pluma root  &
+  608  pluma /etc/postfix/main.cf 
+  609  echo 'init' | mail -s 'init' root
+  610  cd /var/mail
+  611  ls
+  612  ls -sal
+  613  cat root
+  614  cp /dev/null root
+  615  ls
+  616  echo 'init' | mail -s 'init' root
+  617  cat root
+  618  ls
+  619  ls -sal /var/log|more
+  620  more /var/log/syslog
+  621  tail /var/log/syslog
+  622  more /etc/hosts
+  623  tail /var/log/syslog
+  624  pluma /etc/postfix/main.cf 
+  625  systemctl reload postfix
+  626  echo 'init' | mail -s 'init' root
+  627  more /var/log/syslog
+  628  tail /var/log/syslog
+  629  pluma /etc/postfix/main.cf 
+  630  systemctl reload postfix
+  631  echo 'init' | mail -s 'init' root
+  632  echo 'init' | mail -s 'init' root
+  633  echo 'init' | mail -s 'init' root
+  634  systemctl reload postfix
+  635  pluma /etc/postfix/main.cf 
+  636  systemctl reload postfix
+  637  echo 'init' | mail -s 'init' root
+  638  ls
+  639  pluma root
+  640  pluma root
+  641  tail /var/log/syslog
+  642  echo 'init' | mail -s 'init' root
+  643  tail /var/log/syslog
+  644  apt purge postfix
+  645  apt purge mailutils
+  646  apt get install postfix
+  647  apt-get install postfix
+  648  pluma /etc/postfix/main.cf
+  649  echo 'init' | mail -s 'init' root
+  650  apt-get install mailutils
+  651  echo 'init' | mail -s 'init' root
+  652  cd /var/mail/
+  653  ls
+  654  cat root 
+  655  apt install bind9 bind9utils
+  656  pluma /etc/bind/named_conf_options
+  657  nano /etc/bind/
+  658  nano /etc/bind/named.conf.options 
+  659  dig yahoo.com
+  660  dig yahoo.com
+  661  echo 'init' | mail -s 'init' rootls
+  662  ls
+  663  cat root
+  664  ftp localhost
+  665* 
+  666  systemctl restart vsftpd
+  667  systemctl status vsftpd
+  668  ftp localhost
+  669  apt install vsftpc
+  670  apt install vsftpd
+  671  systemctl restart vsftpd
+  672  ftp localhost
+  673  systemctl status vsftpd
+  674  pluma /etc/vsftpd.conf 
+  675  pluma /etc/vsftpd.conf 
+  676  systemctl restart vsftpd
+  677  ftp localhost
+  678  whereis ftp
+  679  ftp 
+  680  man ftp
+  681  apt-get install ftp
+  682  ftp localhost
+  683  systemctl status postfix
+  684  systemctl status ftopng
+  685* 
+  686  systemctl status apache2
+  687  systemctl status vsftpd
+  688  systemctl reload vsftpd
+  689  systemctl enable vsftpd
+  690  systemctl status vsftpd
+  691  systemctl reload vsftpd
+  692  systemctl status vsftpd
+  693  pluma /etc/vsftpd.conf 
+  694  systemctl status vsftpd
+  695  history
+  696  history > ~/root/Desktop/commands.txt
+  697  history > ~/root/Desktop/commands.txt
+  698  history > root/Desktop/commands.txt
+  699  history > /root/Desktop/commands.txt
